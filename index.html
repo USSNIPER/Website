@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Added from first code snippet -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="icon" type="image/jpg" href="favicon.jpg"> <!-- Added from first code snippet -->
+  <link rel="icon" type="image/jpg" href="favicon.jpg">
   <title>US_SNIPER Mods</title>
 
   <!-- Open Graph Meta Tags for Link Previews -->
@@ -235,6 +235,15 @@
       text-align: center;
     }
 
+    .mod-count {
+      position: fixed;
+      bottom: 1rem;
+      left: 2rem;
+      font-size: 1rem;
+      color: #00ff00;
+      z-index: 1000; /* Ensure it's above other content */
+    }
+
     @media (max-width: 768px) {
       .game-row {
         flex-direction: column;
@@ -243,13 +252,16 @@
       .game-button {
         width: 90%;
       }
+      .mod-count {
+        left: 1rem; /* Adjust for smaller screens */
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="version">Beta V0.7</div>
+    <div class="version">Beta V0.8</div>
     <div class="header-buttons-group">
       <a class="header-button donate-button" href="donate.html">Donate</a>
       <button class="header-button changelog-button" onclick="window.location.href='changelog.html'">CHANGELOG</button>
@@ -290,6 +302,10 @@
     <p class="footer-text">
       This website is made and updated by US_SNIPER
     </p>
+  </div>
+
+  <div class="mod-count">
+    Mod Count: 175
   </div>
 
 </body>
