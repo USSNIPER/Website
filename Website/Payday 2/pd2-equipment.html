@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Payday 2 - Equipment</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #00ff00;
+      min-height: 100vh;
+      padding: 3rem 2rem;
+      text-align: center;
+      position: relative;
+      z-index: 0;
+    }
+
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('pd2-background.png'); /* Image is in the same directory */
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      filter: blur(5px);
+      -webkit-filter: blur(5px);
+      z-index: -1;
+      opacity: 0.8;
+    }
+
+    body::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    p {
+      font-size: 1.3rem;
+      max-width: 700px;
+      margin: 0 auto 1.5rem;
+      line-height: 1.5;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .home-button {
+      background-color: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border: none;
+      color: #00ff00;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 0.75rem 1.5rem;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+      font-family: Arial, sans-serif;
+      font-size: 1.2rem;
+      display: inline-block;
+      margin-bottom: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .home-button:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #a0ffaa;
+    }
+
+    .mod-list {
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem 1rem;
+      list-style: none;
+      padding: 0;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .mod-item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      min-width: 150px;
+      padding: 0.5rem 0;
+    }
+
+    .mod-link {
+      color: #00ff00;
+      text-decoration: underline;
+      font-size: 1.3rem;
+      font-weight: normal;
+      transition: color 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .mod-link:hover {
+      color: #a0ffaa;
+    }
+
+    .mod-icon {
+      font-size: 1.5rem;
+      color: #8a2be2;
+      line-height: 1;
+    }
+
+    .mod-emoji {
+      font-size: 1.5rem;
+      color: #8a2be2;
+      line-height: 1;
+    }
+
+    @media (max-width: 768px) {
+      .mod-item {
+        flex-basis: 100%;
+        max-width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <h1>EQUIPMENT</h1>
+
+  <button class="home-button" onclick="window.location.href='../index.html'">HOME</button>
+
+  <p>Welcome to Payday 2 Equipment mods, check out the mods below!</p>
+
+  <ul class="mod-list">
+    <li class="mod-item">
+      <a class="mod-link" href="https://files.catbox.moe/h8thoz.zip" target="_blank" download title="You now have infinite ammo bag charges">
+        <i class="fas fa-infinity mod-icon"></i> Infinite Ammo Bag Charges
+      </a>
+    </li>
+    <li class="mod-item">
+      <a class="mod-link" href="https://files.catbox.moe/0ak60q.zip" target="_blank" download title="You now have infinite medic bag charges">
+        <i class="fas fa-stethoscope mod-icon"></i> Infinite Doctor Bag Charges
+      </a>
+    </li>
+    <li class="mod-item">
+      <a class="mod-link" href="https://files.catbox.moe/q8gckz.zip" target="_blank" download title="Your sentry has infinite ammo">
+        <i class="fas fa-robot mod-icon"></i> Infinite Sentry Ammo
+      </a>
+    </li>
+    <li class="mod-item">
+      <a class="mod-link" href="https://files.catbox.moe/4v2s6g.zip" target="_blank" download title="You now instantly deploy equipment">
+        <i class="fas fa-cog mod-icon"></i> Instant Equip Deployment
+      </a>
+    </li>
+    <li class="mod-item">
+      <a class="mod-link" href="https://files.catbox.moe/ocwhh3.zip" target="_blank" download title="You have infinite body bags">
+        <i class="fas fa-infinity mod-icon"></i> Infinite Body Bags
+      </a>
+    </li>
+  </ul>
+
+</body>
+</html>

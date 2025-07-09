@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Payday 2 - Rest of the Mods</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #00ff00;
+      min-height: 100vh;
+      padding: 3rem 2rem;
+      text-align: center;
+      position: relative;
+      z-index: 0;
+    }
+
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('pd2-background.png'); /* Image is in the same directory */
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      filter: blur(5px);
+      -webkit-filter: blur(5px);
+      z-index: -1;
+      opacity: 0.8;
+    }
+
+    body::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    p {
+      font-size: 1.3rem;
+      max-width: 700px;
+      margin: 0 auto 1.5rem;
+      line-height: 1.5;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .home-button {
+      background-color: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border: none;
+      color: #00ff00;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 0.75rem 1.5rem;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+      font-family: Arial, sans-serif;
+      font-size: 1.2rem;
+      display: inline-block;
+      margin-bottom: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .home-button:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #a0ffaa;
+    }
+
+    .mod-category-heading {
+      color: white;
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .mod-list {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem 1rem;
+      list-style: none;
+      padding: 0;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .mod-item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      min-width: 150px;
+      padding: 0.5rem 0;
+    }
+
+    .mod-link {
+      color: #00ff00;
+      text-decoration: underline;
+      font-size: 1.3rem;
+      font-weight: normal;
+      transition: color 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .mod-link:hover {
+      color: #a0ffaa;
+    }
+
+    .mod-icon {
+      font-size: 1.5rem;
+      color: #8a2be2;
+      line-height: 1;
+    }
+
+    .mod-emoji {
+      font-size: 1.5rem;
+      color: #8a2be2;
+      line-height: 1;
+    }
+
+    @media (max-width: 768px) {
+      .mod-item {
+        flex-basis: 100%;
+        max-width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <h1>REST OF THE MODS</h1>
+
+  <button class="home-button" onclick="window.location.href='../index.html'">HOME</button>
+
+  <p>Welcome to Payday 2 Rest of the Mods, check out the mods below!</p>
+
+  <h2 class="mod-category-heading">UI Enhancements</h2>
+  <ul class="mod-list">
+    <li class="mod-item">
+      <a class="mod-link" href="https://www.dropbox.com/scl/fi/eu7vqwgr72smk74vuws9o/Damage-Pop-Up.zip?rlkey=w63tqu0cz4koad28sj08hwpd6&st=ea8daob6&dl=1" target="_blank" download title="When you damage an enemy a pop up shows to show how much you hit them for">
+        <i class="fas fa-comment-dots mod-icon"></i> Damage Pop-Up
+      </a>
+    </li>
+    <li class="mod-item">
+      <a class="mod-link" href="https://files.catbox.moe/yt6qz7.zip" target="_blank" download title="A clean and good UI for Payday 2">
+        <i class="fas fa-desktop mod-icon"></i> Enhanced Vanilla HUD
+      </a>
+    </li>
+  </ul>
+
+  <h2 class="mod-category-heading">Visuals</h2>
+  <ul class="mod-list">
+    <li class="mod-item">
+      <a class="mod-link" href="https://files.catbox.moe/p9b7yv.zip" target="_blank" download title="You don't get flashed from flashbangs">
+        <i class="fas fa-bolt mod-icon"></i> No Flash
+      </a>
+    </li>
+    <li class="mod-item">
+      <a class="mod-link" href="https://files.catbox.moe/7bddtk.zip" target="_blank" download title="You don't see your skin in game">
+        <i class="fas fa-ban mod-icon"></i> No Skin
+      </a>
+    </li>
+    <li class="mod-item">
+      <a class="mod-link" href="https://files.catbox.moe/lssz4b.zip" target="_blank" download title="No rain/snow, only day and night">
+        <i class="fas fa-cloud-sun-rain mod-icon"></i> No Weather
+      </a>
+    </li>
+    <li class="mod-item">
+      <a class="mod-link" href="https://files.catbox.moe/cjxltg.zip" target="_blank" download title="Disables head bobbing for people who like it">
+        <i class="fas fa-head-side-mask mod-icon"></i> No Head Bobbing
+      </a>
+    </li>
+  </ul>
+
+  <h2 class="mod-category-heading">Interaction</h2>
+  <ul class="mod-list">
+    <li class="mod-item">
+      <a class="mod-link" href="https://files.catbox.moe/a8tvle.zip" target="_blank" download title="You don't need to press a button to interact with stuff">
+        <i class="fas fa-door-open mod-icon"></i> Always Interact
+      </a>
+    </li>
+    <li class="mod-item">
+      <a class="mod-link" href="https://files.catbox.moe/kozuwk.zip" target="_blank" download title="You can interact through walls">
+        <i class="fas fa-th-large mod-icon"></i> Interact Through Walls
+      </a>
+    </li>
+    <li class="mod-item">
+      <a class="mod-link" href="https://files.catbox.moe/prcjut.zip" target="_blank" download title="Every interaction/timer is instant">
+        <i class="fas fa-stopwatch mod-icon"></i> Remove Timers
+      </a>
+    </li>
+  </ul>
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Team Fortress Mods</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #00ff00;
+      min-height: 100vh;
+      padding: 3rem 2rem;
+      text-align: center;
+      position: relative;
+      z-index: 0;
+    }
+
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('tf2-background.webp'); /* Set background image */
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      filter: blur(5px); /* Apply blur effect */
+      -webkit-filter: blur(5px); /* Safari support */
+      z-index: -1; /* Place behind content */
+      opacity: 0.8; /* Adjust opacity of the blurred image */
+    }
+
+    body::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+      z-index: -1; /* Place behind content, above blurred image */
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    p {
+      font-size: 1.3rem;
+      max-width: 700px;
+      margin: 0 auto 1.5rem;
+      line-height: 1.5;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .home-button {
+      background-color: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border: none;
+      color: #00ff00;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 0.75rem 1.5rem;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+      font-family: Arial, sans-serif;
+      font-size: 1.2rem;
+      display: inline-block;
+      margin-bottom: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .home-button:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #a0ffaa;
+    }
+
+    .mod-category-heading {
+      color: white;
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .mod-list {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem 1rem;
+      list-style: none;
+      padding: 0;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .mod-item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      min-width: 150px;
+      padding: 0.5rem 0;
+    }
+
+    .mod-link {
+      color: #00ff00;
+      text-decoration: underline;
+      font-size: 1.3rem;
+      font-weight: normal;
+      transition: color 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .mod-link:hover {
+      color: #a0ffaa;
+    }
+
+    .mod-icon {
+      font-size: 1.5rem;
+      color: #8a2be2;
+      line-height: 1;
+    }
+
+    .mod-emoji {
+      font-size: 1.5rem;
+      color: #8a2be2;
+      line-height: 1;
+    }
+
+    @media (max-width: 768px) {
+      .mod-item {
+        flex-basis: 100%;
+        max-width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <h1>TEAM FORTRESS MODS</h1>
+
+  <button class="home-button" onclick="window.location.href='../index.html'">HOME</button>
+
+  <h2 class="mod-category-heading">Gameplay Improvements</h2>
+  <ul class="mod-list">
+    <li class="mod-item">
+      <a class="mod-link" href="https://files.catbox.moe/8d2nkg.zip" target="_blank" title="Water is more realistic and higher quality">
+        <span class="mod-emoji">💧</span> Improved Water
+      </a>
+    </li>
+    <li class="mod-item">
+      <a class="mod-link" href="https://files.catbox.moe/gmud4m.zip" target="_blank" title="Snow is more realistic and higher quality">
+        <span class="mod-emoji">❄️</span> Better Snow
+      </a>
+    </li>
+    <li class="mod-item">
+      <a class="mod-link" href="https://files.catbox.moe/2jblai.7z" target="_blank" title="every single rocket is different">
+        <span class="mod-emoji">🚀</span> Unique Rockets
+      </a>
+    </li>
+    <li class="mod-item">
+      <a class="mod-link" href="https://files.catbox.moe/4tkqtl.zip" target="_blank" title="blue prints now look better">
+        <span class="mod-emoji">📝</span> Better Blueprints
+      </a>
+    </li>
+  </ul>
+
+  <h2 class="mod-category-heading">Graphics Enhancements</h2>
+  <ul class="mod-list">
+    <li class="mod-item">
+      <a class="mod-link" href="https://www.dropbox.com/scl/fi/yqvxmzmyrj162aaqg13j4/Terrible-Graphics-19-v1-1-1558209825.zip?rlkey=id6aueps4zxc9jnpstjg4ion1&st=s7laho40&dl=1" target="_blank" title="graphics are lowered for an FPS boost">
+        <span class="mod-emoji">🔧</span> Low Graphics
+      </a>
+    </li>
+    <li class="mod-item">
+      <a class="mod-link" href="https://www.dropbox.com/scl/fi/g9r9cpxxm55x28k0ecfyo/Beta-Release-2_0-2-2-0.7z?rlkey=6oxa0kgnpmyovstv28rzwp9ac&st=mxc16hzh&dl=1" target="_blank" title="makes every texture in the game higher quality">
+        <span class="mod-emoji">🎨</span> Complete HD Retexture
+      </a>
+    </li>
+    <li class="mod-item">
+      <a class="mod-link" href="https://files.catbox.moe/brqgyf.zip" target="_blank" title="Fixes bugs that the game has">
+        <span class="mod-emoji">🛠️</span> Fix Pack
+      </a>
+    </li>
+    <li class="mod-item">
+      <a class="mod-link" href="https://files.catbox.moe/f6l4vx.zip" target="_blank" title="a good hud">
+        <span class="mod-emoji">🖥️</span> Ultra HUD
+      </a>
+    </li>
+  </ul>
+
+</body>
+</html>

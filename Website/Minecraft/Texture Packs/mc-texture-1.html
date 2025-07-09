@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Minecraft 1.21.7 Texture Packs</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #00ff00;
+      min-height: 100vh;
+      padding: 3rem 2rem;
+      text-align: center;
+      position: relative; /* Needed for the pseudo-element overlay */
+      z-index: 0; /* Ensure body content is above the pseudo-element */
+    }
+
+    /* Background image with blur and overlay */
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      /* Updated to use the relative path for the image */
+      background-image: url('minecraft-background.webp');
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      filter: blur(5px); /* Adjust blur amount as needed */
+      -webkit-filter: blur(5px); /* Safari support */
+      z-index: -1; /* Place behind content */
+      opacity: 0.8; /* Adjust opacity of the blurred image if needed */
+    }
+
+    /* Optional: Add a subtle dark overlay for better text readability */
+    body::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4); /* Dark overlay, adjust opacity as needed */
+      z-index: -1; /* Place behind content, above blurred image */
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      position: relative; /* Ensure text is above background */
+      z-index: 1;
+    }
+
+    p {
+      font-size: 1.3rem;
+      max-width: 700px;
+      margin: 0 auto 1.5rem;
+      line-height: 1.5;
+      text-align: center;
+      position: relative; /* Ensure text is above background */
+      z-index: 1;
+    }
+
+    .home-button {
+      background-color: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border: none;
+      color: #00ff00;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 0.75rem 1.5rem;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+      font-family: Arial, sans-serif;
+      font-size: 1.2rem;
+      display: inline-block;
+      margin-bottom: 2rem;
+      position: relative; /* Ensure button is above background */
+      z-index: 1;
+    }
+
+    .home-button:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #a0ffaa;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>1.21.7 TEXTURE PACKS</h1>
+
+  <button class="home-button" onclick="window.location.href='../../index.html'">HOME</button>
+
+  <p>Welcome To Minecraft 1.21.7 Texture Packs!</p>
+  <p>No Texture Packs Yet Since This Is A new Game Version!</p>
+
+</body>
+</html>
