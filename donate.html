@@ -12,7 +12,7 @@
       color: #00ff00;
       min-height: 100vh;
       padding: 3rem 2rem;
-      text-align: center; /* Ensures block-level elements are centered if they have margin: auto */
+      text-align: center;
     }
 
     h1 {
@@ -42,10 +42,10 @@
       transition: background-color 0.3s, color 0.3s;
       font-family: Arial, sans-serif;
       font-size: 1.2rem;
-      display: block; /* Changed to block to put it on its own line */
-      margin: 1.5rem auto 1.5rem; /* Centered and added vertical margins */
-      width: fit-content; /* Allow button to size to content */
-      min-width: 120px; /* Ensure a minimum readable width */
+      display: block;
+      margin: 1.5rem auto 1.5rem;
+      width: fit-content;
+      min-width: 120px;
     }
 
     .home-button:hover {
@@ -53,28 +53,27 @@
       color: #a0ffaa;
     }
 
-    /* Style for the donation button */
     .donate-link-button {
-      display: block; /* Changed to block to put it on its own line */
-      margin: 0 auto; /* Centered */
-      background: linear-gradient(to right, #ff5f6d, #ffc371); /* Vibrant gradient */
+      display: block;
+      margin: 0 auto;
+      background: linear-gradient(to right, #ff5f6d, #ffc371);
       color: white;
       font-weight: bold;
       text-transform: uppercase;
       padding: 1rem 2rem;
-      border-radius: 30px; /* More rounded */
+      border-radius: 30px;
       text-decoration: none;
       font-size: 1.5rem;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
       transition: all 0.3s ease;
       letter-spacing: 1px;
-      width: fit-content; /* Allow button to size to content */
-      min-width: 200px; /* Ensure a minimum readable width */
+      width: fit-content;
+      min-width: 200px;
     }
 
     .donate-link-button:hover {
-      background: linear-gradient(to right, #ffc371, #ff5f6d); /* Reverse gradient on hover */
-      transform: translateY(-3px); /* Slight lift effect */
+      background: linear-gradient(to right, #ffc371, #ff5f6d);
+      transform: translateY(-3px);
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
     }
   </style>

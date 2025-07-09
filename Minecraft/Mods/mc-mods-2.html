@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Minecraft 1.8.9 Mods</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #00ff00;
+      min-height: 100vh;
+      padding: 3rem 2rem;
+      text-align: center;
+      position: relative;
+      z-index: 0;
+    }
+
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      /* Relative path to the image: up one directory from 'Mods' */
+      background-image: url('minecraft-background.png');
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      filter: blur(5px);
+      -webkit-filter: blur(5px);
+      z-index: -1;
+      opacity: 0.8;
+    }
+
+    body::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    p {
+      font-size: 1.3rem;
+      max-width: 700px;
+      margin: 0 auto 1.5rem;
+      line-height: 1.5;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .home-button {
+      background-color: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border: none;
+      color: #00ff00;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 0.75rem 1.5rem;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+      font-family: Arial, sans-serif;
+      font-size: 1.2rem;
+      display: inline-block;
+      margin-bottom: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .home-button:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #a0ffaa;
+    }
+
+    .mod-category-heading {
+      color: white;
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .mod-list {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem 1rem;
+      list-style: none;
+      padding: 0;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .mod-item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      min-width: 150px;
+      padding: 0.5rem 0;
+    }
+
+    .mod-link {
+      color: #00ff00;
+      text-decoration: underline;
+      font-size: 1.3rem;
+      font-weight: normal;
+      transition: color 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .mod-link:hover {
+      color: #a0ffaa;
+    }
+
+    .mod-icon {
+      font-size: 1.5rem;
+      color: #8a2be2;
+      line-height: 1;
+    }
+
+    .mod-emoji {
+      font-size: 1.5rem;
+      color: #8a2be2;
+      line-height: 1;
+    }
+
+    .disclaimer {
+      font-size: 0.9rem;
+      color: #00ff88;
+      margin-top: 4rem;
+      text-align: center;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    @media (max-width: 768px) {
+      .mod-item {
+        flex-basis: 100%;
+        max-width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <h1>Welcome To Minecraft 1.8.9 Mods!</h1>
+
+  <button class="home-button" onclick="window.location.href='../../index.html'">HOME</button>
+
+  <h2 class="mod-category-heading">Gameplay Improvements/Additions</h2>
+  <ul class="mod-list">
+    <li class="mod-item">
+      <a class="mod-link" href="https://modrinth.com/mod/xaeros-minimap" target="_blank">
+        <i class="fas fa-map-marked-alt mod-icon"></i> Xaero's Minimap
+      </a>
+    </li>
+    <li class="mod-item">
+      <a class="mod-link" href="https://modrinth.com/mod/jei" target="_blank">
+        <i class="fas fa-boxes mod-icon"></i> Just Enough Items
+      </a>
+    </li>
+    <li class="mod-item">
+      <a class="mod-link" href="https://modrinth.com/mod/wavey-capes" target="_blank">
+        <i class="fas fa-wind mod-icon"></i> Wavey Capes
+      </a>
+    </li>
+    <li class="mod-item">
+      <a class="mod-link" href="https://modrinth.com/mod/replaymod" target="_blank">
+        <i class="fas fa-video mod-icon"></i> Replay Mod
+      </a>
+    </li>
+    <li class="mod-item">
+      <a class="mod-link" href="https://modrinth.com/mod/ai-improvements" target="_blank">
+        <i class="fas fa-robot mod-icon"></i> AI Improvements
+      </a>
+    </li>
+    <li class="mod-item">
+      <a class="mod-link" href="https://modrinth.com/mod/friendly-fire" target="_blank">
+        <i class="fas fa-handshake mod-icon"></i> Friendly Fire
+      </a>
+    </li>
+    <li class="mod-item">
+      <a class="mod-link" href="https://modrinth.com/mod/noexpensive" target="_blank">
+        <i class="fas fa-dollar-sign mod-icon"></i> No Expensive
+      </a>
+    </li>
+  </ul>
+
+  <h2 class="mod-category-heading">Performance</h2>
+  <ul class="mod-list">
+    <li class="mod-item">
+      <a class="mod-link" href="https://modrinth.com/mod/entityculling" target="_blank">
+        <i class="fas fa-eye-slash mod-icon"></i> Entity Culling
+      </a>
+    </li>
+    <li class="mod-item">
+      <a class="mod-link" href="https://modrinth.com/mod/overflowparticles" target="_blank">
+        <i class="fas fa-atom mod-icon"></i> Overflow Particles
+      </a>
+    </li>
+  </ul>
+
+  <h2 class="mod-category-heading">UI Improvements/Additions</h2>
+  <ul class="mod-list">
+    <li class="mod-item">
+      <a class="mod-link" href="https://modrinth.com/mod/fpsdisplay" target="_blank">
+        <i class="fas fa-chart-line mod-icon"></i> FPS Display
+      </a>
+    </li>
+    <li class="mod-item">
+      <a class="mod-link" href="https://modrinth.com/mod/quickquit" target="_blank">
+        <i class="fas fa-power-off mod-icon"></i> Quick Quit
+      </a>
+    </li>
+    <li class="mod-item">
+      <a class="mod-link" href="https://modrinth.com/mod/dcch" target="_blank">
+        <i class="fas fa-comment-slash mod-icon"></i> Don't Clear Chat History
+      </a>
+    </li>
+    <li class="mod-item">
+      <a class="mod-link" href="https://modrinth.com/plugin/tab-was-taken" target="_blank">
+        <i class="fas fa-users mod-icon"></i> TAB
+      </a>
+    </li>
+    <li class="mod-item">
+      <a class="mod-link" href="https://modrinth.com/mod/namepain" target="_blank">
+        <i class="fas fa-tags mod-icon"></i> Name Pain
+      </a>
+    </li>
+  </ul>
+
+  <p>More Mods Coming Soon...</p>
+
+  <p class="disclaimer">
+    When You Press On One Of The Links Above, It Redirects You To Modrinth To Download It Since I Am Not Allowed To Publish Them Myself
+  </p>
+
+</body>
+</html>

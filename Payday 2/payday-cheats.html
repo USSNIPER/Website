@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Payday 2 Cheats Mods</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #2c003e, #003f3f);
+      color: #00ff00;
+      min-height: 100vh;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .home-button {
+      background-color: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border: none;
+      color: #00ff00;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 0.75rem 1.5rem;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+      font-family: Arial, sans-serif;
+      font-size: 1.2rem;
+      display: inline-block;
+      margin-bottom: 2rem;
+      text-decoration: none;
+    }
+
+    .home-button:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #a0ffaa;
+    }
+
+    .main-content-area {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      max-width: 2100px;
+      margin-top: 2rem;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    .left-menu {
+      flex-shrink: 0;
+      width: 250px;
+      background-color: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border: 1px solid #8a2be2;
+      border-radius: 15px;
+      padding: 1rem;
+      margin-right: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      box-sizing: border-box;
+    }
+
+    .menu-heading {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: white;
+      margin-bottom: 1rem;
+      text-align: left;
+      padding-left: 0.5rem;
+    }
+
+    .menu-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu-item {
+      margin-bottom: 0.5rem;
+    }
+
+    .menu-link {
+      display: block;
+      padding: 0.7rem 0.5rem;
+      color: #00ff00;
+      text-decoration: none;
+      font-size: 1.1rem;
+      text-align: left;
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .menu-link:hover {
+      background-color: rgba(138, 43, 226, 0.2);
+      color: #a0ffaa;
+    }
+
+    .main-content {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .mods-grid-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 20px;
+    }
+
+    .mod-container {
+      background-color: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border: 1px solid #8a2be2;
+      border-radius: 15px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      box-sizing: border-box;
+      width: 350px;
+      height: 500px;
+      flex-shrink: 0;
+      flex-grow: 0;
+      justify-content: space-between;
+    }
+
+    .mod-image {
+      width: 100%;
+      height: 250px;
+      border-radius: 10px;
+      object-fit: cover;
+      border: 1px solid #00ff00;
+    }
+
+    .mod-name {
+      font-size: 1.7rem;
+      font-weight: bold;
+      color: white;
+      margin-top: 0.5rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .mod-description {
+      font-size: 1rem;
+      color: #cccccc;
+      margin-bottom: 0.8rem;
+      text-align: center;
+      padding: 0 10px;
+      flex-grow: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    }
+
+    .download-link {
+      background-color: rgba(138, 43, 226, 0.7);
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s, color 0.3s;
+      font-size: 1.1rem;
+      display: inline-block;
+    }
+
+    .download-link:hover {
+      background-color: rgba(153, 50, 204, 0.9);
+    }
+
+    .disclaimer {
+      font-size: 1rem;
+      color: #ff8800;
+      margin-top: 3rem;
+      max-width: 600px;
+      line-height: 1.4;
+      border: 1px solid #ff8800;
+      padding: 1rem;
+      border-radius: 10px;
+      background-color: rgba(255, 136, 0, 0.1);
+      text-align: center;
+    }
+
+    @media (max-width: 800px) {
+      .main-content-area {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .left-menu {
+        width: 90%;
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+
+      .mods-grid-container {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>PAYDAY 2 CHEATS MODS</h1>
+
+  <a class="home-button" href="../index.html">HOME</a>
+
+  <div class="main-content-area">
+    <nav class="left-menu">
+      <div class="menu-heading">Categories</div>
+      <ul class="menu-list">
+        <li class="menu-item"><a href="payday-cheats.html" class="menu-link">Cheats Mods</a></li>
+        <li class="menu-item"><a href="payday-gameplay.html" class="menu-link">Gameplay Improvements</a></li>
+        <li class="menu-item"><a href="payday-crime-spree.html" class="menu-link">Crime Spree</a></li>
+        <li class="menu-item"><a href="payday-equipment.html" class="menu-link">Equipment</a></li>
+        <li class="menu-item"><a href="payday-free-stuff.html" class="menu-link">Free Stuff</a></li>
+        <li class="menu-item"><a href="payday-movement.html" class="menu-link">Movement</a></li>
+        <li class="menu-item"><a href="payday-rest-of-the-mods.html" class="menu-link">Rest of the Mods</a></li>
+      </ul>
+    </nav>
+
+    <div class="main-content">
+      <div class="mods-grid-container">
+        <div class="mod-container">
+          <img src="pd2-images/pd2-cheats-mods-images/payday-cheats-mod.webp" alt="Payday 2 Cheats Mod" class="mod-image" onerror="this.onerror=null;this.src='https://placehold.co/350x250/00ff00/000000?text=Image+Missing';">
+          <div class="mod-name">Cheats Mod (different ign)</div>
+          <div class="mod-description">This Mod grants you every cheat you could possibly want in Payday 2</div>
+          <a class="download-link" href="https://www.dropbox.com/scl/fi/7qc4wx9928ne44frnwdyt/CheatsMod.zip?rlkey=kanb3yqkv3tpukvwkrli3y1gn&st=dgbfyxa1&dl=1" target="_blank">Download Mod</a>
+        </div>
+
+        <div class="mod-container">
+          <img src="pd2-images/pd2-cheats-mods-images/payday-god-mode.webp" alt="Payday 2 God Mode" class="mod-image" onerror="this.onerror=null;this.src='https://placehold.co/350x250/00ff00/000000?text=Image+Missing';">
+          <div class="mod-name">God Mode</div>
+          <div class="mod-description">You Are now invincible and cannot die</div>
+          <a class="download-link" href="https://files.catbox.moe/g8cpia.ZIP" target="_blank">Download Mod</a>
+        </div>
+
+        <div class="mod-container">
+          <img src="pd2-images/pd2-cheats-mods-images/payday-aimbot.webp" alt="Payday 2 Aimbot" class="mod-image" onerror="this.onerror=null;this.src='https://placehold.co/350x250/00ff00/000000?text=Image+Missing';">
+          <div class="mod-name">Aimbot</div>
+          <div class="mod-description">You Auto lock onto every target and automatically shoot them</div>
+          <a class="download-link" href="https://files.catbox.moe/98p4ir.zip" target="_blank">Download Mod</a>
+        </div>
+
+        <div class="mod-container">
+          <img src="pd2-images/pd2-cheats-mods-images/payday-infinite-ammo.webp" alt="Payday 2 Infinite Ammo" class="mod-image" onerror="this.onerror=null;this.src='https://placehold.co/350x250/00ff00/000000?text=Image+Missing';">
+          <div class="mod-name">Infinite Ammo</div>
+          <div class="mod-description">Toggleable Infinite Ammo</div>
+          <a class="download-link" href="https://files.catbox.moe/zje16g.zip" target="_blank">Download Mod</a>
+        </div>
+
+        <div class="mod-container">
+          <img src="pd2-images/pd2-cheats-mods-images/payday-dlc-unlocker.webp" alt="Payday 2 DLC Unlocker" class="mod-image" onerror="this.onerror=null;this.src='https://placehold.co/350x250/00ff00/000000?text=Image+Missing';">
+          <div class="mod-name">DLC Unlocker</div>
+          <div class="mod-description">You unlock every single DLC in the game</div>
+          <a class="download-link" href="https://files.catbox.moe/ou7l86.zip" target="_blank">Download Mod</a>
+        </div>
+
+        <div class="mod-container">
+          <img src="pd2-images/pd2-cheats-mods-images/payday-no-recoil.webp" alt="Payday 2 No Recoil" class="mod-image" onerror="this.onerror=null;this.src='https://placehold.co/350x250/00ff00/000000?text=Image+Missing';">
+          <div class="mod-name">No Recoil</div>
+          <div class="mod-description">You Have 0 Recoil And Spread</div>
+          <a class="download-link" href="https://files.catbox.moe/97yt1d.zip" target="_blank">Download Mod</a>
+        </div>
+
+        <div class="mod-container">
+          <img src="pd2-images/pd2-cheats-mods-images/payday-no-custody.webp" alt="Payday 2 No Custody" class="mod-image" onerror="this.onerror=null;this.src='https://placehold.co/350x250/00ff00/000000?text=Image+Missing';">
+          <div class="mod-name">No Custody</div>
+          <div class="mod-description">You Cannot Go Into Custody</div>
+          <a class="download-link" href="https://files.catbox.moe/53pnzo.zip" target="_blank">Download Mod</a>
+        </div>
+
+        <div class="mod-container">
+          <img src="pd2-images/pd2-cheats-mods-images/payday-unlimited-downed-time.webp" alt="Payday 2 Unlimited Downed Time" class="mod-image" onerror="this.onerror=null;this.src='https://placehold.co/350x250/00ff00/000000?text=Image+Missing';">
+          <div class="mod-name">Unlimited Downed Time</div>
+          <div class="mod-description">You Will Stay Down Until Somebody Revives You</div>
+          <a class="download-link" href="https://files.catbox.moe/o9ugmb.zip" target="_blank">Download Mod</a>
+        </div>
+      </div>
+
+      <div class="disclaimer">
+        This page is for testing use only! These are just some leaks for how the website is going to look. This is not the final look. This is still beta. Once it will arrive, I will announce it in the Discord server!
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
